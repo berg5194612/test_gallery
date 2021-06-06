@@ -1,0 +1,12 @@
+<div class="list-all">
+  <h1 class="list-all__title">All images</h1>
+  <div *ngFor="let image of images" class="list-all__wrap-picture">
+    <a routerLink="/image-details/{{ image.id }}">
+      <img
+        src="https://picsum.photos/id/{{ image.id }}/350/350"
+        class="list-all__picture"
+      />
+      <span class="list-all_picture-author">{{ image.author }}</span>
+    </a>
+  </div>
+</div>

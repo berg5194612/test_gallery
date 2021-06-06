@@ -1,0 +1,7 @@
+<div *ngIf="details" class="image-details">
+  <h1 class="image-details__title">Photo by {{ details.author }}</h1>
+  <img class="image-details__pic" src="{{ details.download_url }}" />
+  <span class="image-details__size">
+    Original width: {{ details.width }}, original heigth: {{ details.height }}
+  </span>
+</div>
